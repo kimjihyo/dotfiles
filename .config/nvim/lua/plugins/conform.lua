@@ -24,6 +24,10 @@ return { -- Autoformat
       lua = { 'stylua' },
       c = { 'clang-format' },
       cpp = { 'clang-format' },
+      javascript = { 'prettier' },
+      typescript = { 'prettier' },
+      typescriptreact = { 'prettier' },
+      javascriptreact = { 'prettier' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
