@@ -1,0 +1,143 @@
+[
+  {
+    "command": "workbench.action.navigateLeft",
+    "key": "ctrl+a h"
+  },
+  {
+    "command": "workbench.action.navigateDown",
+    "key": "ctrl+a j",
+    "when": "!searchViewletVisible && !searchInputBoxFocus"
+  },
+  {
+    "command": "workbench.action.navigateUp",
+    "key": "ctrl+a k"
+  },
+  {
+    "command": "workbench.action.navigateRight",
+    "key": "ctrl+a l"
+  },
+  {
+    "command": "workbench.action.nextEditorInGroup",
+    "key": "tab",
+    "when": "(vim.mode == 'Normal') && editorTextFocus"
+  },
+  {
+    "command": "workbench.action.previousEditorInGroup",
+    "key": "shift+tab",
+    "when": "(vim.mode == 'Normal') && editorTextFocus"
+  },
+  {
+    "command": "workbench.action.moveEditorToRightGroup",
+    "key": "ctrl+w l",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "workbench.action.moveEditorToLeftGroup",
+    "key": "ctrl+w h",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "workbench.action.moveEditorToBelowGroup",
+    "key": "ctrl+w j",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "workbench.action.moveEditorToAboveGroup",
+    "key": "ctrl+w k",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "workbench.action.closeActiveEditor",
+    "key": "ctrl+w q",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "runCommands",
+    "key": "ctrl+w v",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)",
+    "args": {
+      "commands": [
+        "workbench.action.splitEditorRight",
+        "explorer.openAndPassFocus",
+        "workbench.action.closeEditorsInOtherGroups"
+      ]
+    }
+  },
+  {
+    "command": "workbench.action.splitEditorDown",
+    "key": "ctrl+w s",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "workbench.action.closeOtherEditors",
+    "key": "ctrl+w o",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "workbench.action.moveActiveEditorGroupRight",
+    "key": "ctrl+w x",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "space t",
+    "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "command": "filesExplorer.copy",
+    "key": "c",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "command": "filesExplorer.paste",
+    "key": "p",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "command": "filesExplorer.cut",
+    "key": "x",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "command": "explorer.newFile",
+    "key": "a",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "command": "explorer.newFolder",
+    "key": "shift+a",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "command": "filesExplorer.openFilePreserveFocus",
+    "key": "enter",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "command": "explorer.openToSide",
+    "key": "s",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "args": {
+      "commands": [
+        "workbench.action.splitEditorDown",
+        "explorer.openAndPassFocus",
+        "workbench.action.closeOtherEditors"
+      ]
+    },
+    "command": "runCommands",
+    "key": "shift+s",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  }
+]
