@@ -1,0 +1,14 @@
+{
+  "workbench.colorTheme": "Default Dark Modern",
+  "files.autoSave": "off",
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  }
+}

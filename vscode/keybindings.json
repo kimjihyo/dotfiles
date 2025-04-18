@@ -139,5 +139,15 @@
     "command": "runCommands",
     "key": "shift+s",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
   }
 ]
