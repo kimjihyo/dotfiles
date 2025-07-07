@@ -17,16 +17,6 @@
     "key": "ctrl+a l"
   },
   {
-    "command": "workbench.action.nextEditorInGroup",
-    "key": "tab",
-    "when": "(vim.mode == 'Normal') && editorTextFocus"
-  },
-  {
-    "command": "workbench.action.previousEditorInGroup",
-    "key": "shift+tab",
-    "when": "(vim.mode == 'Normal') && editorTextFocus"
-  },
-  {
     "command": "workbench.action.moveEditorToRightGroup",
     "key": "ctrl+w l",
     "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
@@ -149,5 +139,15 @@
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
   }
 ]
