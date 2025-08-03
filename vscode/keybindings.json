@@ -17,6 +17,16 @@
     "key": "ctrl+a l"
   },
   {
+    "command": "workbench.action.nextEditorInGroup",
+    "key": "tab",
+    "when": "(vim.mode == 'Normal') && editorTextFocus"
+  },
+  {
+    "command": "workbench.action.previousEditorInGroup",
+    "key": "shift+tab",
+    "when": "(vim.mode == 'Normal') && editorTextFocus"
+  },
+  {
     "command": "workbench.action.moveEditorToRightGroup",
     "key": "ctrl+w l",
     "when": "vim.mode == 'Normal'&& (editorTextFocus || !inputFocus)"
@@ -131,6 +141,31 @@
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" // Only in File Explorer
   },
   {
+    "key": "alt+p",
+    "command": "workbench.action.quickOpen",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen",
+    "when": "isWindows"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "workbench.action.showCommands",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "-workbench.action.showCommands",
+    "when": "isWindows"
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active && isWindows"
+  },
+  {
     "key": "cmd+t",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
@@ -138,7 +173,7 @@
   {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
+    "when": "terminal.active && isWindows"
   },
   {
     "key": "ctrl+y",
@@ -149,5 +184,15 @@
     "key": "tab",
     "command": "-acceptSelectedSuggestion",
     "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "isWindows"
+  },
+  {
+    "key": "alt+shift+e",
+    "command": "workbench.view.explorer",
+    "when": "isWindows && viewContainer.workbench.view.explorer.enabled"
   }
 ]
