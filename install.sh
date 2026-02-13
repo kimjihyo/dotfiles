@@ -50,5 +50,12 @@ if [ -f "$DOTFILES/vscode/keybindings.json" ]; then
   link "$DOTFILES/vscode/keybindings.json" "$VSCODE_DIR/keybindings.json"
 fi
 
+# iterm2 (use iTerm2's custom folder feature instead of symlink)
+if [ -d "$DOTFILES/iterm2" ]; then
+  defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$DOTFILES/iterm2"
+  defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+  echo "iTerm2 configured to load prefs from $DOTFILES/iterm2"
+fi
+
 echo ""
 echo "All dotfiles linked!"
