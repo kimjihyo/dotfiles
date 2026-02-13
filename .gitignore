@@ -1,1 +1,5 @@
-.config/tmux/plugins
+# OS
+.DS_Store
+
+# Sensitive files - never commit
+gh/hosts.yml

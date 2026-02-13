@@ -1,0 +1,12 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "allow": [
+      "Run(git *)",
+      "Run(gh *)"
+    ]
+  }
+}
