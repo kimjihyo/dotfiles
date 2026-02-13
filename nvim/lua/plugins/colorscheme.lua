@@ -1,5 +1,8 @@
 return {
-	"ellisonleao/gruvbox.nvim",
+	dir = vim.fn.stdpath("config") .. "/colors",
+	name = "0x96f",
 	priority = 1000,
-	config = true,
+	config = function()
+		vim.cmd.colorscheme("0x96f")
+	end,
 }
