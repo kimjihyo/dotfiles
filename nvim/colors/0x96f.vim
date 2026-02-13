@@ -60,11 +60,11 @@ hi Ignore guifg=#262427
 
 " Cursor and line highlighting
 hi Cursor guifg=#000000 guibg=#fcfcfa
-hi CursorLine guibg=#fcfcfa
-hi CursorColumn guibg=#fcfcfa
+hi CursorLine guibg=#363338
+hi CursorColumn guibg=#363338
 
 " Visual selection
-hi Visual guibg=#fcfcfa
+hi Visual guibg=#454249
 
 " Search highlighting
 hi Search guibg=#ffd05e guifg=#262427
