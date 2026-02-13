@@ -1,8 +1,8 @@
 return {
 	dir = vim.fn.stdpath("config") .. "/colors",
-	name = "Apple-System-Colors",
+	name = "0x96f",
 	priority = 1000,
 	config = function()
-		vim.cmd.colorscheme("Apple-System-Colors")
+		vim.cmd.colorscheme("0x96f")
 	end,
 }
