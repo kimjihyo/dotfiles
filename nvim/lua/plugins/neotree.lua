@@ -22,7 +22,4 @@ return {
 			},
 		},
 	},
-	init = function()
-		vim.keymap.set("n", "<leader>b", "<cmd>Neotree toggle<CR>")
-	end,
 }
