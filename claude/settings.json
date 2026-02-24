@@ -8,5 +8,11 @@
       "Run(git *)",
       "Run(gh *)"
     ]
-  }
+  },
+  "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "/Users/jihyokim/dotfiles/claude/scripts/context-bar.sh"
+  },
+  "skipDangerousModePermissionPrompt": true
 }
