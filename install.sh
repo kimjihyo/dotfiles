@@ -39,8 +39,16 @@ link "$DOTFILES/git/.gitconfig" "$HOME/.gitconfig"
 # gh
 link "$DOTFILES/gh/config.yml" "$HOME/.config/gh/config.yml"
 
-# claude
-link "$DOTFILES/claude/settings.json" "$HOME/.claude/settings.json"
+# claude (copy + substitute path instead of symlink, for cross-platform path support)
+mkdir -p "$HOME/.claude"
+if [ -L "$HOME/.claude/settings.json" ]; then
+  rm "$HOME/.claude/settings.json"
+elif [ -e "$HOME/.claude/settings.json" ]; then
+  echo "Backing up $HOME/.claude/settings.json -> $HOME/.claude/settings.json.bak"
+  mv "$HOME/.claude/settings.json" "$HOME/.claude/settings.json.bak"
+fi
+sed "s|__DOTFILES__|$DOTFILES|g" "$DOTFILES/claude/settings.json" > "$HOME/.claude/settings.json"
+echo "Generated $HOME/.claude/settings.json (with $DOTFILES path)"
 
 # vscode (only if files exist in dotfiles)
 if [ "$OS" = "Darwin" ]; then

@@ -12,7 +12,7 @@
   "model": "opus",
   "statusLine": {
     "type": "command",
-    "command": "/Users/jihyokim/dotfiles/claude/scripts/context-bar.sh"
+    "command": "__DOTFILES__/claude/scripts/context-bar.sh"
   },
   "skipDangerousModePermissionPrompt": true
 }
