@@ -2,9 +2,6 @@ if [ -d "/opt/homebrew/opt/node@24/bin" ]; then
   export PATH="/opt/homebrew/opt/node@24/bin:$PATH"
 fi
 
-export LANG=en_US.UTF-8
-export LC_TIME=en_US.UTF-8
-
 # ZSH CONFIGS
 
 export ZSH="$HOME/.oh-my-zsh"
